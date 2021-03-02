@@ -1,0 +1,1 @@
+SELECT count(`name`) AS `birthdays_count`, DAYNAME(MAKEDATE(YEAR(NOW()), DAYOFYEAR(birthday_at))) as `weekday` FROM shop.users group by weekday;
